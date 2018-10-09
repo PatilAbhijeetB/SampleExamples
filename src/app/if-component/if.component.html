@@ -1,0 +1,23 @@
+<div>
+    If Component=
+    <div *ngIf="isFirstLogin; then mytrue;else myElseBlock">
+        {{Welcome_Msg}}
+        
+    </div>
+
+    <ng-template #myElseBlock>
+        <span>
+            old User
+        </span>
+    </ng-template>
+    <ng-template #mytrue>
+        Welcome to jungle.
+    </ng-template>
+
+</div>
+
+
+<div [hidden]="!isFirstLogin">
+    {{ Welcome_Msg }}
+
+</div>

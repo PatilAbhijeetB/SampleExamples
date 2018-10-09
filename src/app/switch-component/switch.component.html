@@ -1,0 +1,15 @@
+<div>
+    Switch Case
+    <div>
+    Enter Roll Number = 
+    <input [(ngModel)]="roll" />
+    
+    <div [ngSwitch]="roll">
+        <span *ngSwitchCase="'1'">One</span>
+        <span *ngSwitchCase="'2'">Two</span>
+        <span *ngSwitchCase="'3'">Three</span>
+
+        <span *ngSwitchDefault>Roll Number Not Found</span>
+    </div>
+</div>
+</div>
